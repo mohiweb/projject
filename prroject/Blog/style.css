@@ -1,0 +1,230 @@
+/* general styles */
+@import url("reset.css");
+body{
+  direction: rtl;
+  background: rgb(58,108,180);
+  background:#ccc;
+              
+  font-family: tahoma;
+}
+
+.container{
+ width: 1100px;
+  margin: auto;
+  position: relative;
+}
+.clearfix{
+  clear: both;
+}
+/* header */
+#header{
+  margin-top: 20px;
+}
+
+  #header #logo img{
+    width: 90px;
+    
+  }
+ 
+  #header .titles{
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    right: 10px;
+ 
+   
+  }
+  #header .titles h1{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #header .titles h2{
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  #header .user{
+    position: absolute;
+    top: 37px;
+    left: 6px;
+  }
+  #header .user .butten{
+    padding: 7px 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+   
+  }
+  #header .user .login{
+    background-color: #3092c7;
+    
+    
+  }
+  #header .user .register{
+    background-color: #30c751;
+  
+    
+  }
+
+
+/* navigition */
+#navigition{
+     background-color: #263238;
+     margin-top: 20px;
+
+}
+#navigition ul li{
+  display: inline-block;
+}
+#navigition ul li a{
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+    padding: 20px 15px;
+    display: inline-block;
+    transition:0.15s;
+
+}
+#navigition ul li a:hover{
+  background-color: #37474f;
+  margin-right: 3px;
+}
+/* section */
+#content{
+  margin-top:20px ;
+  padding: 10px;
+  width: 800px;
+float: right ;
+box-sizing: border-box;
+}
+.post-item{
+  background-color: white;
+  border:2px solid #ccc;
+  border-radius: 3px;
+  margin-top: 15px;
+}
+.post-item:first-child{
+  margin-top: 0;
+}
+.post-item .post-image{
+  margin:10px;
+  float: right;
+}
+
+.post-item .post-image img{
+  width: 200px;
+  height: 240px;
+ border: 2px solid #ccc;
+ border-radius: 3px;
+}
+.post-item .post-title{
+  font-size:27px;
+  font-weight: bold;
+  border-bottom: 2px dashed #ccc;
+  padding:15px;
+
+}
+.post-item .post-content{
+  padding: 10px;
+  line-height: 26px;
+  height: 240px;
+  overflow: hidden;
+}
+.post-item .post-date{
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-top: 2px solid #ccc;
+  position: relative;
+}
+.post-item .read-more{
+  background-color: #212121;
+  font-size: 12px;
+  text-decoration: none;
+  color: wheat;
+  position: absolute;
+  padding: 5px;
+  left: 3px;
+  bottom: 5px;
+}
+.post-item .read-more:hover{
+  background-color:#000;
+}
+/* sidbar */
+#sidebar{
+  padding: 10px;
+  width: 300px;
+float: left;
+box-sizing: border-box;
+}
+#sidebar .sidebar-item{
+  background-color: #fffefe;
+  margin-top: 10px;
+  border:1px solid #ccc;
+  border-radius: 3px;
+}
+#sidebar .sidebar-item .sidebar-header{
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #212121;
+  border-radius: 3px 3px 0 0;
+}
+#sidebar .sidebar-item .sidebar-content{
+  padding: 10px;
+}
+#sidebar .categories ul li a{
+  color: #212121;
+  border-right: 3px solid #493f3f;
+  padding-right: 5px;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.25s;
+
+}
+#sidebar .categories ul  a:hover{
+  transition: 0.25s;
+  margin-right: 4px;
+  border-right: 5px solid rgb(92, 92, 236);
+}
+#sidebar .newsletter{
+  text-align: center;
+}
+#sidebar .newsletter p{
+  font-size: 18px;
+  line-height: 28px;
+  
+}
+#sidebar .newsletter .email-input{
+  width: 90%;
+  padding: 8px;
+  margin-top: 2px;
+}
+#sidebar .newsletter .submit-btn{
+  background-color: #30c751;
+  margin-top: 10px;
+  padding: 6px 20px;
+  border-radius: 3px;
+  color: white;
+
+}
+#sidebar .newsletter .submit-btn:hover{
+  background-color: #2b6939;
+  cursor: pointer;
+
+}
+/* footer */
+#footer{
+  background-color:#181717;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+ 
+}
+#footer p{
+
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
